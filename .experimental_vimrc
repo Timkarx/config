@@ -1,0 +1,13 @@
+# Uncompatible with Vi
+set nocompatible
+
+# Enable syntaz and plugins (for netrw)
+syntax enable
+filetype plugin indent on
+
+# 
+set path+=**
+
+#Snippets
+
+nnoremap ,html :-1read PATH <C-R>
