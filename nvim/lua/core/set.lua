@@ -28,7 +28,7 @@ vim.opt.colorcolumn = "80"
 
 vim.g.mapleader = " "
 
-vim.g['prettier#autoformat'] = 1
+vim.g['prettier#autoformat'] = 0
 vim.g['prettier#autoformat_require_pragma'] = 0
 
 colorscheme = tokyonight 
