@@ -1,7 +1,5 @@
 # Add `~/bin` to the `$PATH`
 export PATH="$HOME/bin:$PATH";
-export FLYCTL_INSTALL="/home/timkarx7/.fly"
-export PATH="$FLYCTL_INSTALL/bin:$PATH"
 export PATH="/home/timkarx7/.luarocks/bin:$PATH"
 
 # Load the shell dotfiles, and then some:
