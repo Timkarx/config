@@ -64,3 +64,10 @@ esac
 
 eval "$(ssh-agent -s)"
 ssh-add ~/.ssh/id_ed25519
+
+# Pyenv - python version manager
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init - bash)"
+
+. "$HOME/.local/bin/env"
