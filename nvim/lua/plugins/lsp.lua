@@ -31,25 +31,22 @@ return {
   {
     'neovim/nvim-lspconfig',
   },
-  { "williamboman/mason.nvim",
-    version = "^1.0.0",
+  {
+    "mason-org/mason.nvim",
+    opts = {},
     config = function ()
-      require('mason').setup({})
+        require("mason").setup()
     end
   },
   {
-    "williamboman/mason-lspconfig.nvim",
-    version = "^1.0.0",
-    dependencies = { "mason.nvim" },
-    config = function()
-      require('mason-lspconfig').setup({
-        ensure_installed = {'lua_ls', 'rust_analyzer'},
-        handlers = {
-          function(server_name)
-            require('lspconfig')[server_name].setup({})
-          end,
-        }
-      })
+    "mason-org/mason-lspconfig.nvim",
+    opts = {},
+    dependencies = {
+      { "mason-org/mason.nvim", opts = {} },
+      "neovim/nvim-lspconfig",
+    },
+    config = function ()
+        require("mason-lspconfig").setup()
     end
   }
 }
