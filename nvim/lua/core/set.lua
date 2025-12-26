@@ -31,4 +31,6 @@ vim.g.mapleader = " "
 vim.g['prettier#autoformat'] = 0
 vim.g['prettier#autoformat_require_pragma'] = 0
 
+vim.opt.rtp:prepend("/home/timkarx7/.opam/default/share/ocp-indent/vim")
+
 colorscheme = tokyonight 
