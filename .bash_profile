@@ -71,3 +71,6 @@ export PYENV_ROOT="$HOME/.pyenv"
 eval "$(pyenv init - bash)"
 
 . "$HOME/.local/bin/env"
+
+export EBOOK_MEDITOR="/home/timkarx7/projects/ebook-meditor/dist"
+export PATH="$EBOOK_MEDITOR:$PATH"
