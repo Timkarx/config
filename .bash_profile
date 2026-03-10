@@ -74,3 +74,7 @@ eval "$(pyenv init - bash)"
 
 export EBOOK_MEDITOR="/home/timkarx7/projects/ebook-meditor/dist"
 export PATH="$EBOOK_MEDITOR:$PATH"
+export PATH=/home/timkarx7/.opencode/bin:$PATH
+export PATH=$PATH:/home/timkarx7/.pulumi/bin
+
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv bash)"
