@@ -33,4 +33,10 @@ vim.g['prettier#autoformat_require_pragma'] = 0
 
 vim.opt.rtp:prepend("/home/timkarx7/.opam/default/share/ocp-indent/vim")
 
+vim.filetype.add({
+    filename = {
+        [".env.example"] = "sh",
+    },
+})
+
 colorscheme = tokyonight 
