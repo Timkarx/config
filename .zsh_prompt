@@ -116,8 +116,7 @@ precmd() {
 }
 
 PROMPT="${bold}
-${userStyle}%n${white} at ${hostStyle}%m${white} in ${green}%~
-\$(prompt_git \"${white} on ${violet}\" \"${blue}\")
+${userStyle}%n${white} at ${hostStyle}%m${white} in ${green}%~\$(prompt_git \"${white} on ${violet}\" \"${blue}\")
 ${white}%# ${reset}"
 
 PROMPT2="${yellow}→ ${reset}"
