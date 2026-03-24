@@ -17,6 +17,8 @@ setopt HIST_IGNORE_SPACE
 # Case-insensitive globbing
 setopt NO_CASE_GLOB
 
+bindkey '^[d' clear-screen
+
 # Command correction (like cdspell, but broader)
 setopt CORRECT
 
