@@ -36,6 +36,10 @@ fi
 # Completion system
 autoload -Uz compinit
 compinit
+# hide command completions
+#zstyle ':completion:*:commands' ignored-patterns '*'
+# only offer directories for path/file completion
+#zstyle ':completion:*' file-patterns '*(/):directories'
 
 # Homebrew zsh completions
 if command -v brew >/dev/null 2>&1; then
