@@ -26,8 +26,7 @@ export PYENV_ROOT="$HOME/.pyenv"
 [[ -d "$PYENV_ROOT/bin" ]] && export PATH="$PYENV_ROOT/bin:$PATH"
 
 # Cargo (Rust)
-[[ -f "$HOME/.cargo/env" ]] && source "$HOME/.cargo/env"
-
+[[ -f "$HOME/.cargo/env" ]] && 
 # Custom paths
 export EBOOK_MEDITOR="$HOME/projects/ebook-meditor/dist"
 export PATH="$EBOOK_MEDITOR:$PATH"
