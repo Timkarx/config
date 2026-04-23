@@ -39,6 +39,19 @@ return {
           "--compile-commands-dir=build-release",
         },
       })
+
+      local function ts_root_dir(bufnr, on_dir)
+        local fname = vim.api.nvim_buf_get_name(bufnr)
+        local dir = vim.fs.root(fname, { "tsconfig.json", "jsconfig.json" })
+          or vim.fs.root(fname, { "package.json" })
+        print(dir)
+        on_dir(dir)
+      end
+
+      vim.lsp.config("ts_ls", {
+        root_dir = ts_root_dir,
+        on_attach = on_attach
+      })
     end,
   },
 }
